@@ -4759,14 +4759,14 @@ input, select, textarea {
 	  
 	  .direction-l {
 		position: relative;
-		width: 500px;
+		width: 420px;
 		float: left;
 		text-align: right;
 	  }
 	  
 	  .direction-r {
 		position: relative;
-		width: 500px;
+		width: 420px;
 		float: right;
 	  }
 	  
@@ -4876,6 +4876,7 @@ input, select, textarea {
 		
 		font-size: 1em;
 		line-height: 1.5em;
+		width: 400px;
 	  }
 	  
 	  .direction-r .desc {
