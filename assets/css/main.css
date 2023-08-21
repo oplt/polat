@@ -4759,14 +4759,14 @@ input, select, textarea {
 	  
 	  .direction-l {
 		position: relative;
-		width: 420px;
+		width: 500px;
 		float: left;
 		text-align: right;
 	  }
 	  
 	  .direction-r {
 		position: relative;
-		width: 420px;
+		width: 500px;
 		float: right;
 	  }
 	  
