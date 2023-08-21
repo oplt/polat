@@ -4876,6 +4876,7 @@ input, select, textarea {
 		
 		font-size: 1em;
 		line-height: 1.5em;
+		width: 100%;
 	  }
 	  
 	  .direction-r .desc {
