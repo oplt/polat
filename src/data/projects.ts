@@ -19,7 +19,7 @@ export const projects: Project[] = [
     `• Designed mission planning workflows for waypoint, grid, terrain-following, photogrammetry, and private patrol operations
     • Built a real-time operations dashboard with WebSocket telemetry, video streaming, telemetry HUD, mission tracking, and operator controls such as pause, resume, and abort
     • Implemented field and geofence management tools with interactive map drawing and route previews
-    • Developed livestock monitoring capabilities, including GPS collar ingestion, herd tracking, and rule-based risk detection for geofence exits and isolated animals
+    • Livestock monitoring capabilities, including GPS collar ingestion, herd tracking, and rule-based risk detection for geofence exits and isolated animals are planned to be added in the future
     • Integrated a photogrammetry processing pipeline that stages captured imagery, dispatches jobs to WebODM/NodeODM, and produces orthomosaics, Cloud-Optimized GeoTIFFs, XYZ tiles, and 3D Tiles
     • Built a patrol intelligence pipeline for anomaly detection, object tracking, geo-projection, evidence capture, incident logging, and automated alert generation`,
     tech: `• Backend: Python, FastAPI, SQLAlchemy, Alembic, PostgreSQL, pgvector, Celery, Redis, Ollama
@@ -45,11 +45,9 @@ export const projects: Project[] = [
   features: `• Designed and implemented secure authentication flows, including local admin login and Nextcloud session bridge authentication
   • Built document ingestion and parsing pipelines for PDF, DOCX, ODT, TXT, and Markdown files
   • Implemented semantic search and grounded AI chat using PostgreSQL + pgvector, with cited source snippets for traceable responses
-  • Developed ACL-aware document access control, respecting Nextcloud owners, users, groups, public links, and superuser permissions
   • Created connector management workflows for Nextcloud integration, credential testing, sync triggering, and full reindex operations
   • Added document browsing and inspection features, including metadata view, inline original-file preview, and per-document reindex
   • Built background processing architecture with Celery and Redis for sync, ingestion, and reindex jobs, including job monitoring
-  • Implemented webhook-driven synchronization with debounce logic and fallback scheduled sync for reliability
   • Added health and readiness monitoring endpoints covering API, database, Redis, broker, and Ollama service availability
   • Integrated Ollama model lifecycle automation, including readiness checks, model pulling, and warm-up for AI-enabled deployments`,
  tech: `• Building production-oriented backend systems with FastAPI and SQLAlchemy
