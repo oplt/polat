@@ -5,6 +5,7 @@ import {
 import {
   GitHub, LinkedIn, LightMode, DarkMode, Email, Download,
 } from '@mui/icons-material';
+import resumePdf from '../../data/OzgurPolat_Resume.pdf';
 
 const NAV_ITEMS = [
   { id: 'about',          label: 'About' },
@@ -201,7 +202,7 @@ export default function LeftPanel({ mode, onToggleTheme }: LeftPanelProps) {
         <Tooltip title="Download CV">
           <IconButton
             component="a"
-            href="/src/data/OzgurPolat_Resume.pdf"
+            href={resumePdf}
             download
             size="small"
             sx={{

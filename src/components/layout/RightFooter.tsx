@@ -1,5 +1,4 @@
-import { Box, Typography, IconButton, Tooltip, alpha, useTheme } from '@mui/material';
-import { GitHub, LinkedIn, Email, KeyboardArrowUp } from '@mui/icons-material';
+import { Box, Typography, alpha, useTheme } from '@mui/material';
 
 export default function RightFooter() {
   const theme = useTheme();

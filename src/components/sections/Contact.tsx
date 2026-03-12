@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { Box, Typography, TextField, Button, Grid, Alert, Snackbar, alpha, useTheme, Link, CircularProgress } from '@mui/material';
+import { Box, TextField, Button, Grid, Alert, Snackbar, alpha, useTheme, Link, CircularProgress } from '@mui/material';
 import type { Theme } from '@mui/material';
 import { Send, Email, GitHub, LinkedIn } from '@mui/icons-material';
 import RightSection from '../ui/RightSection';
@@ -102,10 +102,10 @@ export default function Contact() {
         <AnimatedSection>
           <Box ref={form} component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+              <Grid size={{ xs: 12, sm: 6 }}>
                 <TextField fullWidth label="Name" name="name" required size="small" sx={fieldSx(theme)} />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid size={{ xs: 12, sm: 6 }}>
                 <TextField fullWidth label="Email" name="email" type="email" required size="small" sx={fieldSx(theme)} />
               </Grid>
             </Grid>

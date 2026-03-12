@@ -1,6 +1,7 @@
 import { Box, Container, Typography, Button, IconButton, Tooltip, Chip, alpha, useTheme } from '@mui/material';
 import { GitHub, LinkedIn, KeyboardArrowDown, Download, Visibility } from '@mui/icons-material';
 import { motion } from 'framer-motion';
+import resumePdf from '../../data/OzgurPolat_Resume.pdf';
 
 const techStrip = ['Python','FastAPI','PostgreSQL','Docker','LLM Integration','Pandas','Odoo','CI/CD','SQLAlchemy','REST APIs'];
 
@@ -45,7 +46,7 @@ export default function Hero() {
             <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mb: 5 }}>
               <Button variant="contained" color="primary" size="large" startIcon={<Visibility />} onClick={() => scrollTo('projects')} sx={{ fontFamily: '"Syne", sans-serif' }}>View Projects</Button>
               <Button variant="outlined" color="primary" size="large" onClick={() => scrollTo('contact')} sx={{ fontFamily: '"Syne", sans-serif' }}>Contact Me</Button>
-              <Button variant="text" size="large" startIcon={<Download />} component="a" href="/resume.pdf" download sx={{ color: 'text.secondary', fontFamily: '"Syne", sans-serif', '&:hover': { color: 'text.primary' } }}>Download CV</Button>
+              <Button variant="text" size="large" startIcon={<Download />} component="a" href={resumePdf} download sx={{ color: 'text.secondary', fontFamily: '"Syne", sans-serif', '&:hover': { color: 'text.primary' } }}>Download CV</Button>
             </Box>
           </FadeUp>
 
